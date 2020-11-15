@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import BurgerToArrow from './burger-to-arrow';
+import { useState } from 'react';
 
 function App() {
+  const [state, setState] = useState({
+    sideBarVisible: false
+  })
+  const toggleSideBar = () => {
+    setState({ ...state, sideBarVisible: !state.sideBarVisible })
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BurgerToArrow id={1}
+        tintColor="yellow"
+        visible={state.sideBarVisible}
+        onPress={toggleSideBar}
+        size="medium"
+        speed={4}
+        thickness={3} />
     </div>
   );
 }

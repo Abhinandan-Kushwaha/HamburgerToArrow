@@ -1,0 +1,330 @@
+.menuButtonContainer{
+    height:40px;
+    width:30px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menuButtonContainer.small{
+    transform: scale(0.5)
+}
+
+.menuButtonContainer.medium{
+    transform: scale(0.8)
+}
+
+.menuButtonContainer.xl{
+    transform: scale(1.5)
+}
+
+.bar{
+    height: 2px;
+    width:25px;
+    background-color: white;
+}
+
+.bar1s5{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+
+.bar1s4{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenUp;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+
+.bar1s3{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenUp;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.bar1s2{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenUp;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+
+.bar1s1{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes straightenUp{
+    0%{transform: rotate(-45deg) scaleX(.4) translate(-23px)}
+    100%{}
+}
+
+.arrow1s5{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltDown;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.arrow1s4{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltDown;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+.arrow1s3{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltDown;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.arrow1s2{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltDown;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+.arrow1s1{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tiltDown{
+    100%{transform: rotate(-45deg) scaleX(.4) translate(-23px)}
+}
+
+
+.bar2s5{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideLeft;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+
+.bar2s4{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideLeft;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+
+.bar2s3{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideLeft;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+
+.bar2s2{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideLeft;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+
+.bar2s1{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft{
+    0%{transform: translateX(2px)}
+    100%{}
+}
+
+.arrow2s5{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideRight;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.arrow2s4{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideRight;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+.arrow2s3{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideRight;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.arrow2s2{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideRight;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+.arrow2s1{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: slideRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideRight{
+    100%{transform: translateX(2px)}
+}
+
+
+.bar3s5{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenDown;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+.bar3s4{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenDown;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+.bar3s3{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenDown;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.bar3s2{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenDown;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+.bar3s1{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: straightenDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes straightenDown{
+    0%{transform: rotate(45deg) scaleX(.4) translateX(-24px)}
+    100%{}
+}
+
+.arrow3s5{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltUp;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+.arrow3s4{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltUp;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+.arrow3s3{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltUp;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+.arrow3s2{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltUp;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+.arrow3s1{
+    height: 2px;
+    width:25px;
+    background-color: white;
+    animation-name: tiltUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tiltUp{
+    100%{transform: rotate(45deg) scaleX(.4) translateX(-24px)}
+}
