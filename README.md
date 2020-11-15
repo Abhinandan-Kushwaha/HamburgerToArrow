@@ -4,6 +4,14 @@ Menu icon looks great when it transitions from hamburger to back-arrow icon. The
 
 ![hamburger-icons](burgers.gif)
 
+#Installation
+
+```javascript
+npm i hamburger-to-arrow
+```
+
+## Usage
+
 The minimal code to accomplish the animation with this package-
 
 ```javascript
