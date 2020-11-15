@@ -1,7 +1,24 @@
 {
-  "name": "burger-to-arrow",
+  "name": "hamburger-to-arrow",
   "version": "0.1.0",
-  "private": true,
+  "main": "/hamburger-to-arrow",
+  "homepage": "https://github.com/Abhinandan-Kushwaha/HamburgerToArrow",
+  "keywords": [
+    "hamburger",
+    "menu",
+    "burger",
+    "arrow",
+    "animation"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abhinandan-Kushwaha/HamburgerToArrow"
+  },
+  "author": {
+    "name": "Abhinandan Kushwaha",
+    "email": "kushabhi5@gmail.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
