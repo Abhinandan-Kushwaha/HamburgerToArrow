@@ -1,6 +1,6 @@
 # Hamburger to Arrow animation in React js
 
-Menu icon looks great when it transitions from hamburger to back-arrow icon. There are other packages, but this one gives you a full control on the looks and speed of animation.
+Menu icon looks great when it transitions from hamburger to back-arrow icon. There are other packages, but this one gives you a full control on the looks and speed of animation. It is made using pure css animations hence performant.
 
 ![hamburger-icons](burgers.gif)
 
