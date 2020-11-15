@@ -4,7 +4,7 @@ Menu icon looks great when it transitions from hamburger to back-arrow icon. The
 
 ![hamburger-icons](burgers.gif)
 
-#Installation
+# Installation
 
 ```javascript
 npm i hamburger-to-arrow
