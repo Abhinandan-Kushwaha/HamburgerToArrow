@@ -1,13 +1,13 @@
 import React from 'react';
 import './index.css';
 
-const HamburgerToArrow = props => {
-    let { burgerOpen, onPress, tintColor, size, thickness, id, speed } = props;
-    id = id || '';
-    burgerOpen = burgerOpen || false;
-    speed = speed || 3;
-    thickness = thickness || 2;
-    const burgerClicked = () => {
+export default class HamburgerToArrow extends React.Component {
+    burgerClicked = () => {
+        let { burgerOpen, onPress, id, speed } = this.props;
+        id = id || '';
+        burgerOpen = burgerOpen || false;
+        speed = speed || 3;
+
         if (speed === 1) {
             document.getElementById("first" + id).className = burgerOpen ? "bar1s1" : "arrow1s1";
             document.getElementById("second" + id).className = burgerOpen ? "bar2s1" : "arrow2s1";
@@ -36,19 +36,22 @@ const HamburgerToArrow = props => {
 
         onPress();
     }
-    return (
-        <div
-            className={size === 'small' ? "menuButtonContainer small" :
-                size === 'medium' ? "menuButtonContainer medium" :
-                    size === 'large' ? "menuButtonContainer" :
-                        size === 'xtra-large' ? "menuButtonContainer xl" :
-                            "menuButtonContainer"}
-            onClick={burgerClicked}>
-            <div id={"first" + id} className="bar" style={{ backgroundColor: tintColor || "white", height: thickness, borderRadius: thickness / 2 }} />
-            <div id={"second" + id} className="bar" style={{ backgroundColor: tintColor || "white", height: thickness, borderRadius: thickness / 2 }} />
-            <div id={"third" + id} className="bar" style={{ backgroundColor: tintColor || "white", height: thickness, borderRadius: thickness / 2 }} />
-        </div>
-    )
-}
 
-export default HamburgerToArrow;
+    render() {
+        let { tintColor, size, thickness, id } = this.props;
+        thickness = thickness || 2;
+        return (
+            <div
+                className={size === 'small' ? "menuButtonContainer small" :
+                    size === 'medium' ? "menuButtonContainer medium" :
+                        size === 'large' ? "menuButtonContainer" :
+                            size === 'xtra-large' ? "menuButtonContainer xl" :
+                                "menuButtonContainer"}
+                onClick={this.burgerClicked} >
+                <div id={"first" + id} className="bar" style={{ backgroundColor: tintColor || "white", height: thickness, borderRadius: thickness / 2 }} />
+                <div id={"second" + id} className="bar" style={{ backgroundColor: tintColor || "white", height: thickness, borderRadius: thickness / 2 }} />
+                <div id={"third" + id} className="bar" style={{ backgroundColor: tintColor || "white", height: thickness, borderRadius: thickness / 2 }} />
+            </div >
+        );
+    }
+}
