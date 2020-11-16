@@ -1,7 +1,7 @@
 {
   "name": "hamburger-to-arrow",
   "version": "0.1.4",
-  "main": "./src/hamburger-to-arrow/index.js",
+  "main": "./build/index.html",
   "homepage": "https://github.com/Abhinandan-Kushwaha/HamburgerToArrow",
   "keywords": [
     "hamburger",
